@@ -4,8 +4,6 @@ builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-throw new Exception("Rollback Test Failure");
-
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
